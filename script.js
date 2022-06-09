@@ -3,6 +3,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const submitFormButton = document.getElementById('submit-btn');
 const requiredCheckbox = document.getElementById('agreement');
+const textarea = document.getElementById('textarea');
 submitFormButton.disabled = true;
 
 function submitCheck() {
@@ -22,5 +23,14 @@ function loginCheck(e) {
   }
 }
 
+function getCounter(e) {
+  const counter = document.getElementById('counter');
+  const limit = 500;
+  const count = e.value.length;
+  const rest = limit - count;
+  counter.innerHTML = rest;
+}
+
+textarea.addEventListener('click', getCounter);
 formButton.addEventListener('click', loginCheck);
 requiredCheckbox.addEventListener('change', submitCheck);
