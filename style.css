@@ -114,6 +114,7 @@ main {
   background: linear-gradient(45deg, transparent 5%, rgb(50, 167, 145) 5%);
   border: 0;
   color: white;
+  cursor: pointer;
   letter-spacing: 3px;
   line-height: 45px;
   box-shadow: 6px 0 0 rgb(204, 204, 204);
