@@ -35,12 +35,12 @@ body {
   box-shadow: 1px 1px 2px rgb(51, 51, 51);
   background: rgb(204, 204, 204);
   border: 1px solid black;
-  width: 150px;
+  width: 15vw;
   cursor: pointer;
 }
 
 #contorno {
-  padding: 20px;
+  padding: 15vh;
   background: rgb(204, 219, 220);
 }
 
@@ -57,7 +57,9 @@ main {
   box-shadow: 1px 1px 2px rgb(51, 51, 51);
   background: rgb(204, 204, 204);
   border: 1px solid black;
-  width: 150px;
+  width: 15vw;
+  height: 2.2vh;
+  font-size: 20px;
   margin: 3px;
   cursor: pointer;
 }
@@ -84,8 +86,9 @@ main {
 
 #evaluation-form {
   display: flex;
-  width: 675px;
+  width: 100%;
   flex-direction: column;
+  font-size: 20px;
 }
 
 #textarea {
@@ -205,8 +208,9 @@ main {
 }
 
 footer {
+  position: fixed;
   left: 0;
-  bottom: 22px;
+  bottom: 0;
   width: 100%;
   background-color: rgb(50, 167, 145);
   color: white;
