@@ -23,14 +23,15 @@ function loginCheck(e) {
   }
 }
 
-function getCounter(e) {
+function getCounter() {
   const counter = document.getElementById('counter');
   const limit = 500;
-  const count = e.value.length;
+  const count = textarea.value.length;
   const rest = limit - count;
   counter.innerHTML = rest;
 }
 
-textarea.addEventListener('click', getCounter);
+textarea.addEventListener('keydown', getCounter);
+textarea.addEventListener('keyup', getCounter);
 formButton.addEventListener('click', loginCheck);
 requiredCheckbox.addEventListener('change', submitCheck);
